@@ -1,0 +1,8 @@
+<% @owners.each do |owner| %>
+    <%= owner.first_name %>
+    <%= owner.last_name %>
+    <%= owner.email %>
+    
+    <%= link_to "Destroy #{owner.full_name}", owner, method: :delete %>
+<% end %>
+ 

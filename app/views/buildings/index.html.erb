@@ -1,0 +1,10 @@
+<% @buildings.each do |building| %>
+  <div>
+    <p><%= building.address %></p>
+    <p><%= building.city %></p>
+    <p><%= building.state %></p>
+    <p><%= building.postal_code %></p>
+    <p><%= building.owner.full_name%></p>
+  
+  </div>
+<% end %>
